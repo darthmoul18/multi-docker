@@ -30,7 +30,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v18
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_secret_key: ${{ secrets.AWS_ACCESS_SECRET_KEY }}
           application_name: multi-docker3
           environment_name: Multi-docker3-env
           existing_bucket_name: elasticbeanstalk-us-east-1-133740010598
